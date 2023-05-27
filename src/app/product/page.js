@@ -170,9 +170,9 @@ export default function Product() {
                             <Field type="number" name="categoryId" id="category"
                                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                 placeholder="Category" />
-                            <label 
+                            <label
                                 className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
-                           
+
                             </label>
                             <ErrorMessage name="categoryId" component="div" className="text-red-500" />
                         </div>
@@ -183,7 +183,7 @@ export default function Product() {
                             <Field type="text" name="description" id="description"
                                 className="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-dark dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer"
                                 placeholder="Description" />
-                            <label 
+                            <label
                                 className="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">
                             </label>
                             <ErrorMessage name="description" component="div" className="text-red-500" />
@@ -197,7 +197,7 @@ export default function Product() {
                                 type="file"
                                 name="file"
                                 title="Select a file"
-                                setFieldValue={setFieldValue} 
+                                setFieldValue={setFieldValue}
                                 component={CustomInput}
                             />
                             <ErrorMessage name="file" component="div" className="text-red-500" />
@@ -237,15 +237,15 @@ function CustomInput({ field, form, setSubmitting, ...props }) {
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
 
                 {previewImage && (
-                    <Image unoptimized width={900} height={900} src={previewImage} alt="preview" className="mt-4 h-20 w-20" />
+                    <Image unoptimized width={500} height={500} unoptimized width={900} height={900} src={previewImage} alt="preview" className="mt-4 h-20 w-20" />
                 )}
             </div>
-            <label 
-            class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">
-                
+            <label
+                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">
+
             </label>
-            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400" 
-                id="file_input" type="file" onChange={handleChange}/>
+            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+                id="file_input" type="file" onChange={handleChange} />
 
         </>
     )

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function UserCard({ avatar, name }) {
@@ -24,7 +25,7 @@ export default function UserCard({ avatar, name }) {
           </div>
         </div>
         <div class="flex flex-col items-center pb-10">
-          <img
+          <Image unoptimized width={500} height={500}
             className="w-24 h-24 mb-3 rounded-full shadow-lg"
             src={avatar ? avatar : "/images/placeholder-image.png"}
             alt="product image"

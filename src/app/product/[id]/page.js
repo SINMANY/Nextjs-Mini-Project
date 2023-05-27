@@ -1,5 +1,6 @@
 "user client"
 
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -40,7 +41,7 @@ export default async function ProductDetails({ params }) {
         <main className="items-center justify-between p-24 bg-gray-800 ps-36">
             <a href="#" class="flex flex-col items-center bg-gray-800 border border-gray-200 rounded-lg shadow md:flex-row md:max-w-xl  dark:border-gray-700 dark:bg-gray-800 ">
                 {product.images && (
-                    <img
+                    <Image unoptimized width={500} height={500}
                         className="object-cover w-full rounded-t-lg h-96 md:h-auto md:w-48 md:rounded-none md:rounded-l-lg"
                         src={product.images[0]}
                         alt=""
