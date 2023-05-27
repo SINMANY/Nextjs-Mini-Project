@@ -3,13 +3,13 @@ import Link from 'next/link';
 import React from 'react'
 
 export const metadata = {
-    title: "ISTAD - Home",
+    title: "ISTAD - Category",
     description: 'This is my app',
     images: "/images/alien.png",
 
 
     openGraph: {
-        title: 'ISTAD-HOME',
+        title: 'ISTAD-CATEGORY',
         description: 'This is my app',
         url: 'https://next-v13-with-form-upload-file.vercel.app/',
         images: "/images/alien.png",

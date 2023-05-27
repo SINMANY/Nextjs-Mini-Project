@@ -8,25 +8,25 @@ import Image from "next/image";
 import LoadingSubmit from '@/components/LoadingSumit';
 
 
-export const metadata = {
-    title: "ISTAD - Home",
-    description: 'This is my app',
-    images: "/images/alien.png",
+// export const metadata = {
+//     title: "ISTAD - Product",
+//     description: 'This is my app',
+//     images: "/images/alien.png",
 
 
-    openGraph: {
-        title: 'ISTAD-HOME',
-        description: 'This is my app',
-        url: 'https://next-v13-with-form-upload-file.vercel.app/',
-        images: "/images/alien.png",
-    },
-    twitter: {
-        title: 'My App',
-        description: 'This is my app',
-        url: 'https://myapp.com',
-        image: 'https://myapp.com/og.png',
-    }
-}
+//     openGraph: {
+//         title: 'ISTAD-PRODUCT',
+//         description: 'This is my app',
+//         url: 'https://next-v13-with-form-upload-file.vercel.app/',
+//         images: "/images/alien.png",
+//     },
+//     twitter: {
+//         title: 'My App',
+//         description: 'This is my app',
+//         url: 'https://myapp.com',
+//         image: 'https://myapp.com/og.png',
+//     }
+// }
 
 
 
