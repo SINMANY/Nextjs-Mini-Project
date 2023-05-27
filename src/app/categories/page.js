@@ -6,8 +6,6 @@ export const metadata = {
     title: "ISTAD - Category",
     description: 'This is my app',
     images: "/images/alien.png",
-
-
     openGraph: {
         title: 'ISTAD-CATEGORY',
         description: 'This is my app',
@@ -35,15 +33,15 @@ export async function getCategory() {
     return data;
 }
 
-export default async function page({ id }) {
+export default async function page() {
     const categories = await getCategory();
     console.log(getCategory)
     return (
         <main >
-            <h1 class="mt-20 ms-36 ">Top Categories</h1>
+            <h1 className="mt-20 ms-36 ">Top Categories</h1>
             <div className='flex flex-wrap items-center justify-between ps-36 pe-36'>
                 {categories.map((getCategory) => (
-                    <Link key={category.id} href={`/categories/${getCategory.id}`}>
+                    <Link key={getCategory.id} href={`/categories/${getCategory.id}`}>
                         <CategoryCard
                             key={getCategory.id}
                             id={getCategory.id}

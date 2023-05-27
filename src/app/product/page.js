@@ -2,32 +2,9 @@
 import React, { useEffect, useState } from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import axios from "axios";
-
 import * as Yup from "yup";
 import Image from "next/image";
 import LoadingSubmit from '@/components/LoadingSumit';
-
-
-// export const metadata = {
-//     title: "ISTAD - Product",
-//     description: 'This is my app',
-//     images: "/images/alien.png",
-
-
-//     openGraph: {
-//         title: 'ISTAD-PRODUCT',
-//         description: 'This is my app',
-//         url: 'https://next-v13-with-form-upload-file.vercel.app/',
-//         images: "/images/alien.png",
-//     },
-//     twitter: {
-//         title: 'My App',
-//         description: 'This is my app',
-//         url: 'https://myapp.com',
-//         image: 'https://myapp.com/og.png',
-//     }
-// }
-
 
 
 const FILE_SIZE = 1024 * 1024 * 2; //5MB
@@ -237,14 +214,14 @@ function CustomInput({ field, form, setSubmitting, ...props }) {
             <div className="flex flex-col items-center justify-center pt-5 pb-6">
 
                 {previewImage && (
-                    <Image unoptimized width={500} height={500} unoptimized width={900} height={900} src={previewImage} alt="preview" className="mt-4 h-20 w-20" />
+                    <Image unoptimized width={500} height={500}  src={previewImage} alt="preview" className="mt-4 h-20 w-20" />
                 )}
             </div>
             <label
-                class="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">
+                className="block mb-2 text-sm font-medium text-gray-900 dark:text-white" for="file_input">
 
             </label>
-            <input class="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
+            <input className="block w-full text-sm text-gray-900 border border-gray-300 rounded-lg cursor-pointer bg-gray-50 dark:text-gray-400 focus:outline-none dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400"
                 id="file_input" type="file" onChange={handleChange} />
 
         </>
