@@ -43,7 +43,7 @@ export default async function Home() {
     <>
     <br />
       <Link href="/product" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ms-36 ">Add new Product</Link>
-      <main className="flex my-4 min-h-screen flex-wrap items-center justify-between pb-24 ps-36 pe-36 pt-18">
+      <main className="flex my-4 min-h-screen flex-wrap items-center justify-between p-24 ">
       {products.map((product) => (
         <CardComponent
           key={product.id}

@@ -8,7 +8,7 @@ export default function NarbarComponent({ content }) {
     return (
         <nav class="bg-gray-800 dark:bg-gray-900">
             <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
-                <a href="https://flowbite.com/" class="flex items-center">
+                <a href="https://istad.co/" class="flex items-center">
                     <Image unoptimized width={35} height={50} src="https://istad.co/resources/img/logo_md.png" class="h-8 mr-3" alt="Flowbite Logo" />
                     <span class="self-center text-2xl font-semibold whitespace-nowrap text-white">ISTAD</span>
                 </a>
