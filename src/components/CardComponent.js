@@ -27,12 +27,8 @@ export default function CardComponent({ image, title, price, id }) {
                     <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-3">5.0</span>
                 </div>
                 <div class="flex items-center justify-between">
-                    <span class="text-3xl font-bold text-white dark:text-white">
-                        ${price ? price : "Price"}
-                    </span>
-                    <div class="flex items-center justify-between">
-                        <a href={`/product/${id}`} class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Product Details</a>
-                    </div>
+                    <span class="text-3xl font-bold text-gray-900 dark:text-white">  ${price ? price : "Price"}</span>
+                    <a href={`/product/${id}`} class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">View Detail</a>
                 </div>
                
             </div>
