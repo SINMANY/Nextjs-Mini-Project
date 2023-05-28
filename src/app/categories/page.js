@@ -38,7 +38,7 @@ export default async function page() {
     console.log(getCategory)
     return (
         <main >
-            <h1 className="ms-20 mt-8">Top Categories</h1>
+            <h1 className="ms-24 m-8">Top Categories</h1>
             <div className='flex flex-wrap items-center justify-between'>
                 {categories.map((getCategory) => (
                     <Link key={getCategory.id} href={`/categories/${getCategory.id}`}>
