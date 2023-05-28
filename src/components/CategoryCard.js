@@ -4,7 +4,7 @@ import React from 'react'
 export default function CategoryCard({ image, name }) {
     return (
         <>
-            <div class="pt-12 pb-24">
+            <div class="m-8">
                 <div class="flex flex-col items-center">
                     <Image unoptimized width={500} height={500}
                         className="w-24 h-24 rounded-full shadow-lg"

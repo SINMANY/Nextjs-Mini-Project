@@ -46,7 +46,7 @@ export default async function Users() {
   const users = await getUsers();
   return (
     <>
-    <main className="flex my-4 min-h-screen flex-wrap items-center justify-between mt-18">
+    <main className="flex my-4 min-h-screen flex-wrap items-center justify-between m-8">
       {users.map((user) => (
         <UserCard
           key={user.id}

@@ -4,7 +4,7 @@ import React from 'react'
 
 export default function CardComponent({ image, title, price, id }) {
     return (
-        <div class="w-full max-w-sm bg-gray-800 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
+        <div class="w-full max-w-sm bg-gray-800 border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700 mb-8">
             <Link href={`/product/${id}`}>
                 <Image unoptimized width={500} height={500}
                     className="p-8 rounded-t-lg"
