@@ -42,7 +42,7 @@ export default async function Home() {
   return (
     <>
     <br />
-      <Link href="/product" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800 ms-36 ">Add new Product</Link>
+      <Link href="/product"> <button type="button" class="text-white bg-gradient-to-br from-green-400 to-blue-600 hover:bg-gradient-to-bl focus:ring-4 focus:outline-none focus:ring-green-200 dark:focus:ring-green-800 font-medium rounded-lg text-sm px-5 py-2.5 text-center mr-2 mb-2">Add new product</button></Link>
       <main className="flex my-4 min-h-screen flex-wrap items-center justify-between">
       {products.map((product) => (
         <CardComponent
